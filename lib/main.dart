@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             getPages: AppPages.routes,
           );
         }
-        return Loading();
+        return const Loading();
       },
     );
   }

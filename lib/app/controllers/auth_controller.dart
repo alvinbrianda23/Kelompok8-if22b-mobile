@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-
-import '../routes/app_pages.dart';
+import 'package:myapp/app/routes/app_pages.dart';
 
 class AuthController extends GetxController {
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -37,7 +36,23 @@ class AuthController extends GetxController {
 
   void login(String email, String pass) async {
     try {
-      Get.offAllNamed(Routes.HOME);
+      final credential = await auth.signInWithEmailAndPassword(
+        email: email,
+        password: pass,
+      );
+
+      if (credential.user!.emailVerified) {
+        Get.offAllNamed(Routes.HOME);
+      } else {
+        Get.defaultDialog(
+          title: "Proses Gagal !",
+          middleText: "Harap Verifikasi Email terlebih dahulu.",
+          textConfirm: "OK",
+          onConfirm: () {
+            Get.back(); //close dialog
+          },
+        );
+      }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');
@@ -60,5 +75,28 @@ class AuthController extends GetxController {
     Get.offAllNamed(Routes.LOGIN);
   }
 
-  void resetPassword() {}
+  void resetPassword(String email) async {
+    if (email != "" && GetUtils.isEmail(email)) {
+      try {
+        await auth.sendPasswordResetEmail(email: email);
+        Get.defaultDialog(
+          title: "Berhasil",
+          middleText: "Kami telah mengirimkan reset password ke $email",
+          onConfirm: () {
+            Get.back();
+            Get.back();
+          },
+          textConfirm: "OK",
+        );
+      } catch (e) {
+        Get.defaultDialog(
+            title: "Terjadi kesalahan",
+            middleText: "Tidak dapat melakukan reset password.");
+      }
+    } else {
+      Get.defaultDialog(
+          title: "Terjadi kesalahan", middleText: "Email tidak valid");
+    }
+  }
+
 }

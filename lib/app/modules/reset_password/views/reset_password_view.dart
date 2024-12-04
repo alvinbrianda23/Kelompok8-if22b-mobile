@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:myapp/app/controllers/auth_controller.dart';
-import 'package:myapp/app/modules/signup/controllers/signup_controller.dart';
+import 'package:myapp/app/modules/reset_password/controllers/reset_password_controller.dart';
 import 'package:myapp/app/routes/app_pages.dart';
 
-class SignupView extends GetView<SignupController> {
+class ResetPasswordView extends GetView<ResetPasswordController> {
   final cAuth = Get.find<AuthController>();
 
-  SignupView({super.key});
+  ResetPasswordView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,14 +26,9 @@ class SignupView extends GetView<SignupController> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
-                radius: 40,
-                backgroundColor: Colors.white,
-                child: Icon(Icons.star, color: Colors.orange, size: 40),
-              ),
               SizedBox(height: 20),
               Text(
-                "Create Account",
+                "RESET PASSWORD",
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -53,61 +48,20 @@ class SignupView extends GetView<SignupController> {
                 ),
               ),
               SizedBox(height: 20),
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: 'Password',
-                  filled: true,
-                  fillColor: Colors.white,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
-                  padding: EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
                 ),
                 child: Text(
-                  "Sign Up",
+                  "Reset Password",
                   style: TextStyle(
                     fontSize: 16,
                     color: Color.fromARGB(
                         255, 255, 255, 255), // Tambahkan warna teks di sini
                   ),
                 ),
-              ),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("or sign in with"),
-                ],
-              ),
-              SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.g_mobiledata),
-                    iconSize: 30,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.facebook),
-                    iconSize: 30,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.apple),
-                    iconSize: 30,
-                  ),
-                ],
               ),
               SizedBox(height: 20),
               Row(

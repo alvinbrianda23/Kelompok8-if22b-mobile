@@ -13,7 +13,7 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView'),
+        title: const Text('HomeView'),
         centerTitle: true,
       ),
       body: Center(
@@ -22,10 +22,10 @@ class HomeView extends GetView<HomeController> {
             cAuth.logout();
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color.fromARGB(255, 105, 150, 34),
+            backgroundColor: const Color.fromARGB(255, 105, 150, 34),
             foregroundColor: Colors.white,
           ),
-          child: Text("Login"),
+          child: const Text("Login"),
         ),
       ),
     );
