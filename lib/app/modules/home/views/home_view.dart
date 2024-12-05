@@ -21,16 +21,62 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        leading: IconButton(
-          icon: Icon(Icons.settings, color: Colors.black),
-          onPressed: () {},
-        ),
+        iconTheme: IconThemeData(color: Colors.black),
         actions: [
           IconButton(
             icon: Icon(Icons.notifications, color: Colors.black),
             onPressed: () {},
           ),
         ],
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              decoration: BoxDecoration(color: Color(0xFFFF9A8B)),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Icon(Icons.person, size: 50, color: Color(0xFFFF9A8B)),
+              ),
+              accountName: Text(
+                'Wadiyan',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              accountEmail: Text('Admin'),
+            ),
+            ListTile(
+              leading: Icon(Icons.dashboard, color: Color(0xFFFF9A8B)),
+              title: Text('Dashboard'),
+              trailing: Icon(Icons.arrow_forward_ios, size: 16),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.group, color: Color(0xFFFF9A8B)),
+              title: Text('Data Mahasiswa'),
+              trailing: Icon(Icons.arrow_forward_ios, size: 16),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.group, color: const Color.fromARGB(255, 237, 182, 130)),
+              title: Text('Data Dosen'),
+              trailing: Icon(Icons.arrow_forward_ios, size: 16),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.group, color:Color(0xFFFF9A8B)),
+              title: Text('Data Pegawai'),
+              trailing: Icon(Icons.arrow_forward_ios, size: 16),
+              onTap: () {},
+            ),
+            Spacer(),
+            ListTile(
+              leading: Icon(Icons.logout, color: Color(0xFFFF9A8B)),
+              title: Text('Logout'),
+              trailing: Icon(Icons.arrow_forward_ios, size: 16),
+              onTap: () {},
+            ),
+          ],
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
