@@ -12,7 +12,7 @@ class LoginView extends GetView<LoginController> {
   LoginView({super.key});
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -73,17 +73,18 @@ class LoginView extends GetView<LoginController> {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                   Get.offAllNamed(Routes.HOME);
+                  Get.offAllNamed(Routes.HOME);
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
                   padding: EdgeInsets.symmetric(vertical: 16.0),
-                ),                
-              child: Text(
-                "Log In",
+                ),
+                child: Text(
+                  "Log In",
                   style: TextStyle(
                     fontSize: 16,
-                    color: Color.fromARGB(255, 255, 255, 255), // Tambahkan warna teks di sini
+                    color: Color.fromARGB(
+                        255, 255, 255, 255), // Tambahkan warna teks di sini
                   ),
                 ),
               ),
@@ -128,7 +129,6 @@ class LoginView extends GetView<LoginController> {
                   ),
                   TextButton(
                     onPressed: () {
-
                       Get.offAllNamed(Routes.RESET_PASSWORD);
                     },
                     child: Row(

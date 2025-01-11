@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "419782229286",
     "project_id": "latihan-20312044",
-    "storage_bucket": "latihan-20312044.appspot.com"
+    "storage_bucket": "latihan-20312044.firebasestorage.app"
   },
   "client": [
     {
@@ -12,7 +12,12 @@
           "package_name": "com.alvin"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAuhymermZH_R3faxs-j8LORIWbYcTl4Is"
@@ -20,7 +25,41 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419782229286:android:3b175149c6ee68d6a455e7",
+        "android_client_info": {
+          "package_name": "com.exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuhymermZH_R3faxs-j8LORIWbYcTl4Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     },
@@ -31,7 +70,12 @@
           "package_name": "com.example.app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAuhymermZH_R3faxs-j8LORIWbYcTl4Is"
@@ -39,7 +83,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     },
@@ -50,7 +99,12 @@
           "package_name": "com.example.mya"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAuhymermZH_R3faxs-j8LORIWbYcTl4Is"
@@ -58,7 +112,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     },
@@ -69,7 +128,12 @@
           "package_name": "com.example.myapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAuhymermZH_R3faxs-j8LORIWbYcTl4Is"
@@ -77,7 +141,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419782229286-q4e58fi1epukaqivhgd3gnpa6lsttc6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
