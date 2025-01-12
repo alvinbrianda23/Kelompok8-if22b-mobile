@@ -25,7 +25,7 @@ class AlamatView extends GetView<AlamatController> {
               Get.back();
               controller.delete(id);
             },
-            title: Text('Delete'),
+            title: Text('Deletee'),
           ),
           ListTile(
             onTap: () => Get.back(),

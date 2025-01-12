@@ -27,7 +27,7 @@ class AlamatUpdateView extends GetView<AlamatController> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Update Address'),
+        title: Text('Update'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

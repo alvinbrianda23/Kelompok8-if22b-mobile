@@ -47,7 +47,7 @@ class AlamatAddView extends GetView<AlamatController> {
                       Get.snackbar('Error', 'Please fill all fields');
                     }
                   },
-                  child: Text('Add'),
+                  child: Text('Tambahkan'),
                 ),
               ],
             ),

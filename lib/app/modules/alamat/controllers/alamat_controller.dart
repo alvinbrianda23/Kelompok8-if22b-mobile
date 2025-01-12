@@ -15,7 +15,7 @@ class AlamatController extends GetxController {
     try {
       // Menambahkan data ke koleksi 'alamat'
       await _firestore.collection('alamat').add(data);
-      Get.snackbar('Success', 'Data added successfully');
+      Get.snackbar('Success', 'Data Berhasil Di tambahkan');
     } catch (e) {
       // Menampilkan pesan error jika gagal menambahkan data
       Get.snackbar('Error', 'Failed to add data: $e');
