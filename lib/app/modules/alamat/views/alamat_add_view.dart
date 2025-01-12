@@ -12,7 +12,7 @@ class AlamatAddView extends GetView<AlamatController> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add New Address'),
+        title: Text('Tambahkan Alamat'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
